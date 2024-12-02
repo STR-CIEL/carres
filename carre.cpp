@@ -19,9 +19,16 @@ void CCarre::Afficher() {
 	cout << "x = " << sx <<endl;
 	cout << "y = " << sy << endl;
 	cout << " cote = " << cote << endl;
-
-
-
-
-
+	cout << "x = " << Getsx() << endl;
+	cout << "y = " << Getsy() << endl;
+	cout << "cote  = " << GetCote() << endl;
+}
+int CCarre::Getsx() {
+	return sx;
+}
+int CCarre::Getsy() {
+	return sy;
+}
+int CCarre::GetCote() {
+	return cote;
 }

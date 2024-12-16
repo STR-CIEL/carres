@@ -57,3 +57,27 @@ void CCarre::Deplacer(char direction, int saut) {
 	
 
 }
+void CCarre::Deplacer(int dx, int dy) {
+	char lettre;
+
+	switch (lettre) {
+	case 'n':
+
+		sy = sy + dx;
+		break;
+	case 's':
+
+		sy = sy - dx;
+		break;
+	case 'o':
+		sx = sx - dy;
+		break;
+	case 'e':
+		sx = sx + dy;
+		break;
+
+	}
+
+
+
+}

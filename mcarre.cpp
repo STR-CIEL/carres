@@ -26,6 +26,8 @@ int main() {
 	carre.Afficher();
 	carre.Deplacer(direction, saut);
 	carre.Afficher();
+	carre.Deplacer(4, 5);
+	carre.Afficher();
 	
 
 	

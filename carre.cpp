@@ -22,6 +22,8 @@ void CCarre::Afficher() {
 	cout << "x = " << Getsx() << endl;
 	cout << "y = " << Getsy() << endl;
 	cout << "cote  = " << GetCote() << endl;
+	
+	
 }
 int CCarre::Getsx() {
 	return sx;
@@ -31,4 +33,27 @@ int CCarre::Getsy() {
 }
 int CCarre::GetCote() {
 	return cote;
+}
+void CCarre::Deplacer(char direction, int saut) {
+
+	switch(direction){
+	case 'n':
+		
+		sy = sy + saut;
+		break;
+	case 's':
+
+		sy = sy - saut;
+		break;
+	case 'o':
+		sx = sx - saut;
+		break;
+	case 'e':
+		sx = sx + saut;
+		break;
+
+	}
+
+	
+
 }

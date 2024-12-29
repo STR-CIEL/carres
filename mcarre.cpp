@@ -7,8 +7,7 @@ int main() {
 	int x1;
 	int y1;
 	int cote;
-	char direction;
-	int saut;
+
 	cout << "le valeur de x: " << endl;
 	cin >> x1;
 	CCarre carre;
@@ -18,15 +17,11 @@ int main() {
 	carre.Setsy(y1);
 	cout << "Le valeur de cote: " << endl;
 	cin >> cote;
+	carre.Afficher();
 	carre.Setcote(cote);
-	cout << "Direction de deplacement:" << endl;
-	cin >> direction;
-	cout << "nombre de pixels de deplacement " << endl;
-	cin >> saut;
+	carre.Deplacer('n', 4);
 	carre.Afficher();
-	carre.Deplacer(direction, saut);
-	carre.Afficher();
-	carre.Deplacer(4, 5);
+	carre.Deplacer(5, 5);
 	carre.Afficher();
 	
 

@@ -1,6 +1,6 @@
 #include "carre.h"
 #include <iostream>
-
+#include <vector>
 
 using namespace std;
 
@@ -19,9 +19,7 @@ void CCarre::Afficher() {
 	cout << "x = " << sx <<endl;
 	cout << "y = " << sy << endl;
 	cout << " cote = " << cote << endl;
-	cout << "x = " << Getsx() << endl;
-	cout << "y = " << Getsy() << endl;
-	cout << "cote  = " << GetCote() << endl;
+
 	
 	
 }
@@ -57,27 +55,8 @@ void CCarre::Deplacer(char direction, int saut) {
 	
 
 }
+
 void CCarre::Deplacer(int dx, int dy) {
-	char lettre;
-
-	switch (lettre) {
-	case 'n':
-
-		sy = sy + dx;
-		break;
-	case 's':
-
-		sy = sy - dx;
-		break;
-	case 'o':
-		sx = sx - dy;
-		break;
-	case 'e':
-		sx = sx + dy;
-		break;
-
-	}
-
-
-
+	sx += dx;
+	sy += dy;
 }

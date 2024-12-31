@@ -4,7 +4,7 @@
 
 using namespace std;
 int main() {
-	
+	/*
 	int x1;
 	int y1;
 	int cote;
@@ -25,7 +25,7 @@ int main() {
 	carre.Deplacer('n', 4);
 	carre.Afficher();
 	carre.Deplacer(5, 5);
-	carre.Afficher();
+	carre.Afficher();*/
 	//tableau de 4 carre 
 
 	CCarre tableau[4] = {
@@ -37,7 +37,12 @@ int main() {
 		cout << "Carre " << i+1 <<endl;
 		tableau[i].Afficher();
 	}
-	
+	//constructeur par defaut 
+	CCarre carreDefaut;
+	carreDefaut.Afficher();
+	//constructeur parametre 
+	CCarre carreParametre(5, 5);
+	carreParametre.Afficher();
 
 	
 

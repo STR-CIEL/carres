@@ -4,8 +4,8 @@
 
 using namespace std;
 CCarre::CCarre() {
-	sx ;
-	sy ;
+	sx= 0;
+	sy = 0;
 }
 
 CCarre::CCarre(int sx,int sy) {

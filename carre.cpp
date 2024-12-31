@@ -3,6 +3,18 @@
 #include <vector>
 
 using namespace std;
+CCarre::CCarre() {
+	sx ;
+	sy ;
+}
+
+CCarre::CCarre(int sx,int sy) {
+	
+	this->sx = sx;
+	this->sy = sy;
+	
+}
+
 
 void CCarre::Setsx(int sx1) {
 	this->sx = sx1;
@@ -18,7 +30,7 @@ void CCarre::Afficher() {
 
 	cout << "x = " << sx <<endl;
 	cout << "y = " << sy << endl;
-	cout << " cote = " << cote << endl;
+	//cout << " cote = " << cote << endl;
 
 	
 	

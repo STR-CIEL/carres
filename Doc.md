@@ -6,12 +6,7 @@
 ## Modélisation UML
 - Utilisation de MagicDraw.
 ## Exemples Markdown
-```cpp
-int main() {
-    /// @brief Exemple de variable
-    int var = 10;
-    std::cout << "Hello, World!";
-}
+
 
 | Col1 | Col2 |
 |------|------|
